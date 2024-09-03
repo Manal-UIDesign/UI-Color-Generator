@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="header-content">
+            <img src="Color Wheel.png" alt="Color Generator Logo" id="logo">
+            <div>
+                <h1>Color.UI </h1>
+                <p>Discover UI palettes based on your design projects</p>
+            </div>
+            <a href="mailto:manallkhann.03@gmail.com" class="contact-btn">Contact Us</a>
+        </div>
+    </header>
+
+    <div id="main-content">
+        <!-- Wrapper for the color section with background and styling -->
+        <div id="color-picker-section-wrapper">
+            <div id="color-picker-container">
+                <h2>Would you like to find a palette based on a specific color?</h2>
+                <input type="color" id="colorPicker" value="#FFFFFF">
+                <input type="text" id="colorCode" value="#FFFFFF" readonly>
+                <label for="category">Select a project category:</label>
+                <select id="category">
+                    <option value="sustainability">Sustainability</option>
+                    <option value="finance">Finance</option>
+                    <option value="technology">Technology</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="automotive">Automotive</option>
+                    <option value="travel">Travel</option>
+                    <option value="realestate">Real Estate</option>
+                    <option value="ecommerce">E-commerce</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="food">Food & Beverage</option>
+                    <option value="sports">Sports</option>
+                    <option value="wellness">Wellness</option>
+                </select>
+                <button id="generateBtn">Generate Project Palette</button>
+            </div>
+        </div>
+
+        <!-- Palette container starts here -->
+        <div id="palette-container">
+            <h2 id="category-subheader"></h2> <!-- This will be dynamically updated -->
+            <div id="colorPalettes">
+                <!-- Palette groups will be dynamically inserted here by your JavaScript -->
+            </div>
+        </div>
+        <!-- Palette container ends here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
